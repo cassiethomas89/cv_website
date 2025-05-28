@@ -32,12 +32,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.topBanner .siteTitle {
-  align-items: center;
-  margin-top: 2em;
-  width: inherit;
-}
-
+/*****************Top menu banner********************/
 .topBanner {
   display: flex;
   flex-direction: row;
@@ -55,6 +50,12 @@ body {
 .topBannerDark {
   background-color: #0f0f0f;
   color: var(--foreground);
+}
+
+.topBanner .siteTitle {
+  align-items: center;
+  margin-top: 2em;
+  width: inherit;
 }
 
 .menuButtons {
@@ -102,87 +103,6 @@ body {
 
 .darkModeSwitch {
   padding: 1.5em 6em 0 6em;
-}
-
-.hiddenSection {
-  height: 8em;
-}
-
-.sectionEvens {
-  background-color: #00796b;
-  color: #fff;
-}
-
-.sectionEvensDark {
-  background-color: #202020;
-  color:#fff;
-}
-
-.sectionOdds
-{
-  background: #6abdaf;
-}
-
-.sectionOddsDark {
-  background-color: #272b2b;
-  color:#fff;
-}
-
-.section {
-  padding-top: 3em;
-  height:auto;
-  padding-bottom: 2em;
-  text-align: center;
-}
-
-.photo {
-  display: flex;
-  width:100%;
-  justify-content: center;
-  padding: 0 0 2em 0;
-}
-
-.photo > img {
-  height: 10em;
-}
-
-.section p {
-  font-size: 20px;
-  padding: 0 2em 0 2em;
-}
-.contact {
-  text-align: center;
-}
-
-.section h1 {
-  font-size: 30px;
-  text-align:center;
-  padding-bottom: 1em;
-}
-
-.section textarea {
-  height: 10em;
-  width: 25em;
-  color:#0a0a0a
-}
-
-.skillsSection {
-  height: 15em;
-  text-align:  center;
-}
-
-.skillsList {
-  display: flex;
-  flex-direction: row;
-  height: 10em;
-  width: 100%;
-  text-align:  center;
-}
-
-.skillsList > div {
-  font-size: 20px;
-  padding: 1em;
-  width: inherit;
 }
 
 .switch {
@@ -243,6 +163,89 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+/***************** Sections ********************/
+.section {
+  padding-top: 0.5em;
+  height:auto;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.section p {
+  font-size: 20px;
+  padding: 0 2em 0 2em;
+}
+
+.section h1 {
+  font-size: 30px;
+  text-align:center;
+  padding-bottom: 1em;
+}
+
+.section textarea {
+  height: 10em;
+  width: 25em;
+  color:#0a0a0a
+}
+
+.hiddenSection {
+  height: 6em;
+}
+
+.sectionEvens {
+  background-color: #00796b;
+  color: #fff;
+}
+
+.sectionEvensDark {
+  background-color: #202020;
+  color:#fff;
+}
+
+.sectionOdds
+{
+  background: #6abdaf;
+}
+
+.sectionOddsDark {
+  background-color: #272b2b;
+  color:#fff;
+}
+
+.photo {
+  display: flex;
+  width:100%;
+  justify-content: center;
+  padding: 0 0 2em 0;
+}
+
+.photo > img {
+  height: 10em;
+}
+
+.contact {
+  text-align: center;
+}
+
+.skillsSection {
+  height: 10em;
+  text-align:  center;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align:  center;
+}
+
+.skillsList > div {
+  font-size: 20px;
+  padding: 1em;
+  width: inherit;
 }
 
 .sectionCV {
