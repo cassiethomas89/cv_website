@@ -6,7 +6,7 @@ export default function Home() {
   <main className="mainLight">
       <TopBanner/>
       <div id="Main" className="mainCont">
-        <div className="hiddenSection"></div>
+        <div className="hiddenSection topBannerLight"/>
         <div className="section sectionOdds" id="Summary">
           <Summary/>
         </div>
@@ -45,8 +45,8 @@ export default function Home() {
           <button>submit</button>
           <br/>*/}
         </div> 
+        <div className="footer topBannerLight"></div>
       </div>
-      <div className="footer topBannerLight"></div>
   </main>
   );
 }
