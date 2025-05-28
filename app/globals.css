@@ -3,18 +3,9 @@
 @tailwind utilities;
 
 :root {
-  /* --background: #141313; */
-  /* --background: #6abdaf; */
   --background: #0f0f0f;
   --foreground: #e7e1e1;
   --bodyText: #01534c;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #141313;
-    --foreground: #bec1c4;
-  }
 }
 
 body {
@@ -22,6 +13,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   margin:0px !important;
+}
+
+.mainCont {
+  width: fit-content;
+  height:fit-content;    
 }
 
 .mainLight {
@@ -38,15 +34,14 @@ body {
 
 .topBanner .siteTitle {
   align-items: center;
-  padding-left: 2em;
-  padding-right: 2em;
-  margin-top: 2em
+  margin-top: 2em;
+  width: inherit;
 }
 
 .topBanner {
   display: flex;
   flex-direction: row;
-  height: 10em;
+  height: auto;
   position: fixed;
   width: 100%;
   top: 0;
@@ -72,7 +67,6 @@ body {
 .topBanner > div {
   margin: 10px;
   text-align: center;
-  /* line-height: 75px; */
 }
 
 .topBanner h1 {
@@ -163,7 +157,6 @@ body {
 .section h1 {
   font-size: 30px;
   text-align:center;
-  /* padding-top: 0.5em; */
   padding-bottom: 1em;
 }
 
@@ -258,17 +251,9 @@ input:checked + .slider:before {
 }
 
 .downloadButtons {
-  /* display: flex;
-  flex-direction: row; */
-  /* width: 50%; */
   padding: 0 40%;
-  /* text-align:  center;
-  align-items: center; */
-}
-
-.downloadButtons a {
-  /* margin: 0;
-  padding: 0; */
+  display:flex;
+  justify-content: center;
 }
 
 .downloadBtn {
@@ -282,10 +267,12 @@ input:checked + .slider:before {
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
   font-size: 20px;
+  margin: 1em
 }
 
 .footer {
   height: 10em;
+
 }
 
 .section button {
@@ -295,3 +282,35 @@ input:checked + .slider:before {
   width: 10em;
   padding:1em
 }
+
+@media screen and (max-width: 1340px) {
+    .topBanner h1 {
+        padding-right:0;
+        padding-left:0;
+        width:fit-content;
+    }
+
+    .topBanner h2 {
+        padding-right:0;
+        padding-left:0;
+        width:fit-content;
+    }
+
+    .topBanner .siteTitle {
+        padding-right:0;
+        padding-left:0;
+        width:fit-content;
+    }
+
+    .topBanner button {
+        padding-right:0.5em;
+        padding-left: 0;
+        padding-top: 1.5em;
+    }
+  }
+
+@media screen and (max-width: 900px) {
+    .topBanner button {
+        display: none;
+    }
+} 
