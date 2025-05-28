@@ -52,9 +52,9 @@ const TopBanner = () => {
             <div><SummaryButton /></div>
             <div><SkillsButton /></div>
             <div><ExperienceButton /></div>
+            <div><CertficationsButton /></div>
             <div><CVButton /> </div>
             <div><ContactButton /></div>
-            <div><CertficationsButton /></div>
           </div>
           <div id="darkModeDiv" className="darkModeSwitch darkModeOff">
             <label>Dark Mode</label><br/>
