@@ -2,6 +2,7 @@
 import React, { MouseEventHandler } from "react";
 import headerClick from "./HeaderClick";
 import darkModeClick from "./DarkMode";
+import Certfications from "./Certifications";
 
 const SummaryButton = () => { 
   return (
@@ -34,11 +35,13 @@ const CVButton = () => {
   );
 }
 
-const TopBanner = () => {
-//     const shoot = () => {
-//     alert("test");
-//   }
+const CertficationsButton = () => {
+  return (
+    <button onClick={() => headerClick("Certfications")}>Certfications</button>
+  );
+}
 
+const TopBanner = () => {
     return <div>
         <div className="topBanner topBannerLight">
           <div className="siteTitle">
@@ -51,6 +54,7 @@ const TopBanner = () => {
             <div><ExperienceButton /></div>
             <div><CVButton /> </div>
             <div><ContactButton /></div>
+            <div><CertficationsButton /></div>
           </div>
           <div id="darkModeDiv" className="darkModeSwitch darkModeOff">
             <label>Dark Mode</label><br/>
