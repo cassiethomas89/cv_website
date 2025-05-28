@@ -1,26 +1,284 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --background: #141313; */
+  /* --background: #6abdaf; */
+  --background: #0f0f0f;
+  --foreground: #e7e1e1;
+  --bodyText: #01534c;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #141313;
+    --foreground: #bec1c4;
   }
 }
 
 body {
+  color: var(--bodyText);
   background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin:0px !important;
+}
+
+.mainLight {
+  color: var(--bodyText);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainLight {
+  color: var(--bodyText);
+  background: var(--backgroundDark);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topBanner .siteTitle {
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 2em
+}
+
+.topBanner {
+  display: flex;
+  flex-direction: row;
+  height: 10em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.topBannerLight {
+  background-color: #01534c;
+  color: var(--foreground);
+}
+
+.topBannerDark {
+  background-color: #0f0f0f;
+  color: var(--foreground);
+}
+
+.menuButtons {
+  display: flex;
+  flex-direction: row;
+  left: 5em;
+  color: var(--foreground);
+}
+
+.topBanner > div {
+  margin: 10px;
+  text-align: center;
+  /* line-height: 75px; */
+}
+
+.topBanner h1 {
+  font-size: 50px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-left: 1em;
+  padding-right: 3em;
+  margin:0;
+}
+
+.topBanner h2 {
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-left: 3em;
+  padding-right: 10em;
+  color: var(--foreground);
+  margin:0;
+}
+
+.topBanner button {
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-top: 2.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: var(--foreground);
+  background-color: transparent;
+  border-width:0;
+}
+
+.darkModeSwitch {
+  padding: 1.5em 6em 0 6em;
+}
+
+.hiddenSection {
+  height: 8em;
+}
+
+.sectionEvens {
+  background-color: #00796b;
+  color: #fff;
+}
+
+.sectionEvensDark {
+  background-color: #202020;
+  color:#fff;
+}
+
+.sectionOdds
+{
+  background: #6abdaf;
+}
+
+.sectionOddsDark {
+  background-color: #272b2b;
+  color:#fff;
+}
+
+.section {
+  padding-top: 3em;
+  height:auto;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.photo {
+  display: flex;
+  width:100%;
+  justify-content: center;
+  padding: 0 0 2em 0;
+}
+
+.photo > img {
+  height: 10em;
+}
+
+.section p {
+  font-size: 20px;
+  padding: 0 2em 0 2em;
+}
+.contact {
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 30px;
+  text-align:center;
+  /* padding-top: 0.5em; */
+  padding-bottom: 1em;
+}
+
+.section textarea {
+  height: 10em;
+  width: 25em;
+  color:#0a0a0a
+}
+
+.skillsSection {
+  height: 15em;
+  text-align:  center;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: row;
+  height: 10em;
+  width: 100%;
+  text-align:  center;
+}
+
+.skillsList > div {
+  font-size: 20px;
+  padding: 1em;
+  width: inherit;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6abdaf;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sectionCV {
+  align-items: center;
+  text-align: center;
+}
+
+.downloadButtons {
+  display: flex;
+  flex-direction: row;
+  /* width: 50%; */
+  padding: 0 40%;
+  /* text-align:  center;
+  align-items: center; */
+}
+
+.downloadButtons > button{
+  /* font-size: 20px;
+  padding: 1em;
+  width: 10em; */
+}
+
+.footer {
+  height: 10em;
+}
+
+.section button {
+  font-size: 20px;
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 10em;
 }
