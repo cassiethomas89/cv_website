@@ -74,8 +74,6 @@ body {
   font-size: 50px;
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 600;
-  padding-left: 1em;
-  padding-right: 3em;
   margin:0;
 }
 
@@ -83,8 +81,6 @@ body {
   font-size: 20px;
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 600;
-  padding-left: 3em;
-  padding-right: 10em;
   color: var(--foreground);
   margin:0;
 }
@@ -230,6 +226,10 @@ input:checked + .slider:before {
   text-align: center;
 }
 
+.contact a {
+  color: #fff;
+}
+
 .skillsSection {
   height: 10em;
   text-align:  center;
@@ -244,8 +244,23 @@ input:checked + .slider:before {
 
 .skillsList > div {
   font-size: 20px;
-  padding: 1em;
+  padding-bottom: 1em;
   width: inherit;
+}
+
+.trainingList {
+  padding-left: 38%;
+  padding-right: 30%;
+  font-size: 20px;
+}
+
+.trainingList ul {
+  text-align: left;
+  width: 100%;
+}
+
+.trainingList li {
+  padding:1em;
 }
 
 .sectionCV {
@@ -262,8 +277,6 @@ input:checked + .slider:before {
 .downloadBtn {
   font: bold 11px Arial;
   text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
   padding: 10px 30px;
   border-top: 1px solid #CCCCCC;
   border-right: 1px solid #333333;
