@@ -258,18 +258,30 @@ input:checked + .slider:before {
 }
 
 .downloadButtons {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   /* width: 50%; */
   padding: 0 40%;
   /* text-align:  center;
   align-items: center; */
 }
 
-.downloadButtons > button{
-  /* font-size: 20px;
-  padding: 1em;
-  width: 10em; */
+.downloadButtons a {
+  /* margin: 0;
+  padding: 0; */
+}
+
+.downloadBtn {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 10px 30px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  font-size: 20px;
 }
 
 .footer {
@@ -281,4 +293,5 @@ input:checked + .slider:before {
   padding: 0.5em;
   margin: 0.5em;
   width: 10em;
+  padding:1em
 }
