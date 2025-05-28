@@ -1,5 +1,5 @@
 const Summary = () => {
-    return <div className="section sectionOdds" id="Summary">
+    return <div id="Summary">
         <h1>Summary</h1>
         <div className="photo">
             <img src="me.jpeg"/>

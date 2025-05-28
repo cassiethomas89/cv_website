@@ -11,11 +11,11 @@ export default function Home() {
       <TopBanner/>
       <div id="Main" className="mainCont">
         <div className="hiddenSection topBannerLight"/>
-        <Summary/>
-        <Skills/>
-        <Experience/>
-        <CVDownload />
-        <ContactForm />
+        <div className="section sectionOdds"><Summary /></div>
+        <div className="section sectionEvens"><Skills /></div>
+        <div className="section sectionOdds"><Experience /></div>
+        <div className="section sectionEvens"><CVDownload /></div>
+        <div className="section sectionOdds"><ContactForm /></div>
         <div className="footer topBannerLight"></div>
       </div>
   </main>

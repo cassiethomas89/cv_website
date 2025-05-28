@@ -1,5 +1,5 @@
 const ContactForm = () => {
-    return  <div className="section sectionOdds contact" id="Contact">
+    return  <div className="contact" id="Contact">
           <h1>Contact Me</h1>
           This section has not yet been added
           {/* <textarea></textarea>

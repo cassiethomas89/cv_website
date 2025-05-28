@@ -1,5 +1,5 @@
 const Skills = () => {
-    return <div className="section sectionEvens skillsSection" id="Skills">
+    return <div className="skillsSection" id="Skills">
           <h1>Skills</h1>
           <div className="skillsList">
             <div>C#</div>
