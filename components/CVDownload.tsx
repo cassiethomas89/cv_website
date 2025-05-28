@@ -1,5 +1,5 @@
 const CVDownload = () => {
-    return  <div className="section sectionEvens sectionCV" id="CV">
+    return  <div className="sectionCV" id="CV">
           <h1>CV</h1>
           <p>If you would like copy of my CV you can download that here</p>
           <div className="downloadButtons">
