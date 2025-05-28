@@ -286,6 +286,22 @@ input:checked + .slider:before {
   padding:1em
 }
 
+.footerLinksList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footerLinksList > a {
+  padding: 1em;
+  font-size: 20px;
+}
+
+.footerLinksList img {
+  padding: 1em;
+  width: 3em;
+}
+
 @media screen and (max-width: 1340px) {
     .topBanner h1 {
         padding-right:0;
