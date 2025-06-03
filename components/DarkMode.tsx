@@ -16,11 +16,9 @@ const darkModeClick = () => {
 
 const darkModeOn = () => {
     var elements = document.getElementsByClassName("sectionEvens");
-    flickerClass({currentClass:"sectionEvens", newClass:"sectionEvensDark"});
-    flickerClass({currentClass:"sectionOdds", newClass:"sectionOddsDark"});
-    flickerClass({currentClass:"topBannerLight", newClass:"topBannerDark"});
-    flickerClass({currentClass:"mainLight", newClass:"mainDark"});
-
+    flickerClass({currentClass:"lightModeDarkest", newClass:"darkModeDarkest"});
+    flickerClass({currentClass:"lightModeDark", newClass:"darkModeDark"});
+    flickerClass({currentClass:"lightModeLight", newClass:"darkModeLight"});
 
     let darkMode = document.getElementById("darkModeDiv");
     darkMode?.classList.remove("darkModeOff");
@@ -28,9 +26,9 @@ const darkModeOn = () => {
 }
 
 const darkModeOff= () => {
-    flickerClass({currentClass:"sectionEvensDark", newClass:"sectionEvens"});
-    flickerClass({currentClass:"sectionOddsDark", newClass:"sectionOdds"});
-    flickerClass({currentClass:"topBannerDark", newClass:"topBannerLight"});
+    flickerClass({currentClass:"darkModeDarkest", newClass:"lightModeDarkest"});
+    flickerClass({currentClass:"darkModeDark", newClass:"lightModeDark"});
+    flickerClass({currentClass:"darkModeLight", newClass:"lightModeLight"});
     let darkMode = document.getElementById("darkModeDiv");
     darkMode?.classList.remove("darkModeOn");
     darkMode?.classList.add("darkModeOff");

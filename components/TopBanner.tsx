@@ -43,7 +43,7 @@ const CertficationsButton = () => {
 
 const TopBanner = () => {
     return <div>
-        <div className="topBanner topBannerLight">
+        <div className="topBanner lightModeDarkest">
           <div className="siteTitle">
             <h1>Cassie Thomas</h1>
             <h2>Software Engineer</h2>
@@ -64,7 +64,6 @@ const TopBanner = () => {
             </label>
           </div>
         </div>
-        <hr/>
     </div>
 };
 

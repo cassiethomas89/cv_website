@@ -1,3 +1,5 @@
+'use client'
+
 import TopBanner from "@/components/TopBanner";
 import Summary from "@/components/Summary";
 import Skills from "@/components/Skills";
@@ -12,14 +14,14 @@ export default function Home() {
   <main className="mainLight">
       <TopBanner/>
       <div id="Main" className="mainCont">
-        <div className="hiddenSection topBannerLight"/>
-        <div className="section sectionOdds"><Summary /></div>
-        <div className="section sectionEvens"><Skills /></div>
-        <div className="section sectionOdds"><Experience /></div>
-        <div className="section sectionEvens"><Certfications /></div>
-        <div className="section sectionOdds"><CVDownload /></div>
-        <div className="section sectionEvens"><ContactForm /></div>
-        <div className="footer topBannerLight"><BottomBanner /></div>
+        <div className="hiddenSection lightModeDarkest"/>
+        <div className="section lightModeLight"><Summary /></div>
+        <div className="section lightModeDark"><Skills /></div>
+        <div className="section lightModeLight"><Experience /></div>
+        <div className="section lightModeDark"><Certfications /></div>
+        <div className="section lightModeLight"><CVDownload /></div>
+        <div className="section lightModeDark"><ContactForm /></div>
+        <div className="footer lightModeDarkest"><BottomBanner /></div>
       </div>
   </main>
   );
