@@ -19,11 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   margin:0em !important;
+  width: fit-content;
 }
 
 .mainCont {
-  width: fit-content;
-  height:fit-content;    
+  height:fit-content;
 }
 
 .mainLight {
@@ -69,7 +69,7 @@ body {
   flex-direction: row;
   height: auto;
   position: fixed;
-  width: 100%; 
+  width: 100%;
 }
 
 .topBanner .siteTitle {
@@ -84,9 +84,9 @@ body {
 }
 
 .darkModeSwitch {
-  margin-left: auto !important; 
+  margin-left: auto !important;
   margin-right: 0 !important;
-  padding: 3em 1em;
+  padding: 2em 1em;
 }
 
 .darkModeSwitch > label {
@@ -100,7 +100,7 @@ body {
 }
 
 .topBanner h2 {
-  margin: 0; 
+  margin: 0;
 }
 
 .topBanner button {
@@ -119,7 +119,7 @@ body {
   height: 1em;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -178,7 +178,7 @@ input:checked + .slider:before {
   padding-top: 0.5em;
   height:auto;
   padding-bottom: 2em;
-  text-align: center; 
+  text-align: center;
   font-size: 2em;
 }
 
@@ -249,7 +249,7 @@ input:checked + .slider:before {
 
 .trainingList ul {
   text-align: left;
-  width: 100%;
+  width: auto;
 }
 
 .trainingList li {
@@ -317,7 +317,7 @@ input:checked + .slider:before {
     .darkModeSwitch > label {
         font-size: 2em;
     }
-    
+
     .hiddenSection {
       height: 10em;
     }
@@ -329,7 +329,7 @@ input:checked + .slider:before {
         margin: 0.6em;
     }
 
-}  
+}
 
 @media screen and (max-width: 1480px) {
     .summarySection {
@@ -384,7 +384,7 @@ input:checked + .slider:before {
     .topBanner button {
         font-size: 1.3em;
     }
-}  
+}
 
 @media screen and (max-width: 900px) {
 
@@ -397,4 +397,28 @@ input:checked + .slider:before {
       height: 5em;
       padding-top: 1em;
     }
-} 
+}
+
+@media screen and (max-width: 450px) {
+    .darkModeSwitch > label {
+        font-size: 1em;
+    }
+
+    .topBanner h1 {
+        font-size: 1em;
+        margin: 0px;
+    }
+    
+    .section {
+      font-size: 1em;
+    }
+
+    .skillItem {
+      width:auto;
+    }
+
+    .hiddenSection {
+      height: 6.5em;
+      width: auto;
+    }
+}
